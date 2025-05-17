@@ -53,11 +53,13 @@ def main():
     vulnerabilities.extend(auth_vulns)
     print(f"✅ Broken Authentication Test Completed. Found {len(auth_vulns)} vulnerabilities.\n")
     
+    #Security 
     print("🔍 Testing for Security Misconfiguration...")
     misconfig_vulns = security_misconfiguration.test_security_misconfiguration(url)
     vulnerabilities.extend(misconfig_vulns)
     print(f"✅ Security Misconfiguration Test Completed. Found {len(misconfig_vulns)} vulnerabilities.\n")
     
+    #sensitive Data E
     print("🔍 Testing for Sensitive Data Exposure...")
     sensitive_vulns = sensitive_data_exposure.test_sensitive_data_exposure(url)
     vulnerabilities.extend(sensitive_vulns)

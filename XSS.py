@@ -12,7 +12,7 @@ def test_xss(url):
     vulnerabilities = []
     
     for payload in xss_payloads:
-        test_url = f"{url}?q={payload}"  # Modify this based on site input structure
+        test_url = f"{url}?q={payload}" # Modify this based on site input structure
         print(f"  🔹 Testing payload: {payload}")
 
         try:
